@@ -1,47 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Safia Shire</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac4bf5693a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </head>
+
 <body>
-    
-    <header>
-            <nav class="navbar">
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Saf<span>Shi.</span></a></div>
+            <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#featured works">Featured works</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </nav>
-    </header>
-    <div id="content">
-        <main class="main-a">
-            <section class="section-1">
-                <h1>Hi, I'm Safia Shire</h1>
-                <h2>Passionate about web development</h2>
-                <h3>Looking for my first entry level position</h3>
-    <div class="button">
-            <a href="contact.html" class="contact me">Get in touch</a>
-    </div>
-            </section>
+                <li><a href="#featuredwork">Featured work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-            <!--  <section id="about">
-                <div class="row">
-                      <div class="card">
-                        <h2>About me</h2>
-                        <h5>Title description, Dec 7, 2017</h5>
-                        <div class="fakeimg" style="height:200px;">Image</div>
-                        <p>Some text..</p>
-                        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                      </div>
-            </section>--> 
-        </main>
-    </div>
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hi, I'm </div>
+                <div class="text-2"><span  class="typing">Safia Shire</span> </div>
+                <div class="text-3">I'm looking for my first Junior Front-end developer role</div>
+                <a href="#contact"> Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/profile-1.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Safia and I have worked with these technologies <span class="typing-2"></span>
+                    </div>
+                    <p>In August 2020 I joined the first cohort of the Black Codher Bootcamp. Spent 6 months learning
+                        full-stack technologies to build Javascript and React applications. Focused on producing
+                        responsive and seamless work. </p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featuredwork" id="featuredwork">
+        <div class="max-width">
+            <h2 class="title">My work</h2>
+            <div class="work-content">
+                <div class="card">
+                    <div class="box">
+                        <div class="text">TechitOn</div>
+                        <a href=""><i class="fab fa-github"></i> Demo</a>
+                        <a href="" class="github"> Code base</a>
+                        <p>React app.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Bookish</div>
+                        <a href=""><i class="fab fa-github"></i> Demo</a>
+                        <a href="" class="github"> Code base</a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Quiz</div>
+                        <a href=""><i class="fab fa-github"></i> Demo</a>
+                        <a href="" class="github"> Code base</a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <img src="https://mk0hootsuiteblof6bud.kinstacdn.com/wp-content/uploads/2018/05/social-media-for-business.png"
+                        style="width:100%">
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <span>Created By Safia Shire </a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+    </footer>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
